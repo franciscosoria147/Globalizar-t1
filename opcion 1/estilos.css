@@ -5,6 +5,10 @@
   font-family: "Oswald", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #e8e8e8;
 }
@@ -133,6 +137,7 @@ body {
 }
 main {
   height: 100%;
+  width: 100%;
 }
 main .banner-big img,
 main .banner-small img {
@@ -142,7 +147,90 @@ main .banner-small img {
   height: 70vh;
   width: 100%;
 }
+main .introduccion {
+  font-size: 21px;
+  font-family: "Oswald", sans-serif;
+  padding: 25px 20px;
+  text-align: center;
+  align-content: center;
+}
+main .servicios {
+  font-size: 21px;
+  font-family: "Oswald", sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+  height: 100%;
+}
+main .servicios p {
+  font-size: 21px;
+}
+main .servicios h1 {
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+main .servicios h2 {
+  font-size: 21px;
+}
+main .servicios .item {
+  display: inline-block;
+}
+main .proyectos {
+  height: 100%;
+  padding: 80px 20px;
+  text-align: center;
+}
+main .proyectos .item {
+  display: inline-block;
+}
+main .proyectos .item a img {
+  filter: grayscale(60%);
+  transition: all 1s;
+}
+main .proyectos .item a img:hover {
+  filter: grayscale(0);
+}
+main .nosotros {
+  height: 100%;
+  padding: 80px 30px;
+  display: flex;
+}
+main .nosotros .texto1 {
+  width: 40%;
+  text-align: center;
+  padding-left: 10px;
+}
+main .nosotros .texto1 h1 {
+  font-size: 32px;
+  padding-bottom: 20px;
+}
+main .nosotros .texto1 p {
+  font-size: 21px;
+}
+main .nosotros .colaboradores {
+  width: 60%;
+  text-align: center;
+}
+main .nosotros .colaboradores ul li {
+  display: inline-block;
+  padding-inline: 20px;
+}
+main .nosotros .colaboradores ul li img {
+  border: 1px solid #333a56;
+  border-radius: 50%;
+}
 
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+  .nosotros {
+    display: block !important;
+    padding: 80px 40px;
+  }
+  .nosotros .texto1 {
+    width: 100% !important;
+  }
+  .nosotros .colaboradores {
+    width: 100% !important;
+  }
+}
 @media screen and (max-width: 800px) {
   .banner-big img {
     display: none;
@@ -151,5 +239,19 @@ main .banner-small img {
 @media screen and (min-width: 801px) {
   .banner-small img {
     display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .servicios .item,
+.proyectos .item {
+    padding-inline: 0px;
+    padding-top: 30px;
+  }
+}
+@media screen and (min-width: 401px) {
+  .servicios .item,
+.proyectos .item {
+    padding-inline: 20px;
+    padding-top: 50px;
   }
 }/*# sourceMappingURL=estilos.css.map */

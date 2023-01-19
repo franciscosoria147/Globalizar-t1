@@ -5,6 +5,9 @@
     padding: 0;
     font-family: $f-family;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: $color4;
 }
@@ -146,6 +149,7 @@ body {
 //main
 main {
     height: 100%;
+    width: 100%;
     .banner-big,
     .banner-small {
         img {
@@ -154,6 +158,93 @@ main {
             background-attachment: fixed;
             height: 70vh;
             width: 100%;
+        }
+    }
+    .introduccion {
+        font-size: $f-m;
+        font-family: $f-family;
+        padding: 25px 20px;
+        text-align: center;
+        align-content: center;
+    }
+    .servicios {
+        font-size: $f-m;
+        font-family: $f-family;
+        padding: 40px 20px;
+        text-align: center;
+        height: 100%;
+        p {
+            font-size: $f-m;
+        }
+        h1 {
+            font-size: $f-xl;
+            padding-bottom: 20px;
+        }
+        h2 {
+            font-size: $f-m;
+        }
+        .item {
+            // align-items: center;
+            // justify-content: space-between;
+            display: inline-block;
+        }
+    }
+    .proyectos {
+        height: 100%;
+        padding: 80px 20px;
+        text-align: center;
+        .item {
+            display: inline-block;
+            a img {
+                filter: grayscale(60%);
+                // transform: all 2s;
+                transition: all 1s;
+            }
+            a img:hover {
+                filter: grayscale(0);
+            }
+        }
+    }
+    .nosotros {
+        height: 100%;
+        padding: 80px 30px;
+        display: flex;
+        .texto1 {
+            width: 40%;
+            text-align: center;
+            padding-left: 10px;
+            h1 {
+                font-size: $f-l;
+                padding-bottom: 20px;
+            }
+            p {
+                font-size: $f-m;
+            }
+        }
+        .colaboradores {
+            width: 60%;
+            text-align: center;
+            
+            ul li {
+                display: inline-block;
+                padding-inline: 20px;            
+                img {
+                    border: 1px solid $color2;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 300px) and (max-width: 1000px) {
+    .nosotros {
+        display: block !important;
+        padding: 80px 40px;
+        .texto1 {
+            width: 100% !important;
+        }
+        .colaboradores {
+            width: 100% !important;
         }
     }
 }
@@ -165,10 +256,30 @@ main {
         }
     }
 }
+
 @media screen and (min-width: 801px) {
     .banner-small {
         img {
             display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .servicios,
+    .proyectos {
+        .item {
+            padding-inline: 0px;
+            padding-top: 30px;
+        }
+    }
+}
+@media screen and (min-width: 401px) {
+    .servicios,
+    .proyectos {
+        .item {
+            padding-inline: 20px;
+            padding-top: 50px;
         }
     }
 }
