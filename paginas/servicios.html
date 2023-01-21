@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../estilos.css">
+    <title>Globalizar-t</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                Globalizar<span>-t</span>
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Servicios</a></li>
+                <li><a href="./proyectos.html">Nuestros proyectos</a></li>
+                <li><a href="./nosotros.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
+        <a href="./contacto.html" class="btn"><button>Contactanos</button></a>
+
+        <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="#">Servicios</a>
+                <a href="./proyectos.html">Nuestros proyectos</a>
+                <a href="./nosotros.html">Sobre nosotros</a>
+                <a href="./contacto.html">Contactanos</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="banner-big"><img src="../imagenes/oficina-alegre-portada.jpg" alt="banner"></div>
+        <div class="banner-small"><img src="../imagenes/oficina-alegre-smartphone.jpg" alt="banner"></div>
+
+
+
+        <div class="servicios" id="cont1">
+            <h1>Nuestros servicios</h1>
+            <p>El buen uso de las redes sociales como Instagram y Facebook hoy en día nos ayuda a generar un público que posteriormente puede convertirse en potenciales clientes. Si al buen uso de las redes sociales le sumamos nuestra presencia a través de un Sitio Web las probabilidades de aumentar nuestras ventas son mayores al aumentar nuestros canales de venta, sin mencionar la ventaja de que estariamos automatizando procesos que requieren más tiempo.</p>
+            <cards class="item item1">
+                <img src="../imagenes/community-manager.jpg" alt="" width="340px"><h2>Creación y gestión de redes sociales</h2>
+            </cards>
+            <cards class="item item2">
+                <img src="../imagenes/leyendo-blog.jpg" alt="" width="340px" ><h2>Creacion de Sitios Web</h2></cards>
+            <cards class="item item3">
+                <img src="../imagenes/ecommerce-banner.jpg" alt="" width="340px"><h2>Creacion de Tiendas Web</h2>
+            </cards>
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+        <p>Visitá nuestras redes:</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/globalizar_t?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p>el sitio fue desarrollado por globalizart2023@gmail.com</p>
+</footer>
+
+
+
+
+<script type="text/javascript" src="../nav.js"></script>
+</body>
+</html>

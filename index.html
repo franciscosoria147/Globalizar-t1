@@ -7,14 +7,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
     <link rel="stylesheet" href="./estilos.css">
     <title>Globalizar-t</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            Globalizar<span>-t</span>
-        </div>
+            <div class="logo">
+                <a href="#">
+                    Globalizar<span>-t</span>
+                </a>
+            </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#cont1">Servicios</a></li>
@@ -22,17 +26,17 @@
                 <li><a href="#cont3">Sobre nosotros</a></li>
             </ul>
         </nav>
-        <a href="#" class="btn"><button>Contactanos</button></a>
+        <a href="#cont4" class="btn"><button>Contactanos</button></a>
 
         <a onclick="openNav()" class="menu" href="#"><button>Menú</button></a>
 
         <div class="overlay" id="mobile-menu">
             <a onclick="closeNav()" href="" class="close">&times;</a>
             <div class="overlay-content">
-                <a href="#cont1">Servicios</a>
-                <a href="#cont2">Nuestros proyectos</a>
-                <a href="#cont3">Sobre nosotros</a>
-                <a href="#">Contactanos</a>
+                <a href="./paginas/servicios.html">Servicios</a>
+                <a href="./paginas/proyectos.html">Nuestros proyectos</a>
+                <a href="./paginas/nosotros.html">Sobre nosotros</a>
+                <a href="./paginas/contacto.html">Contactanos</a>
             </div>
         </div>
     </header>
@@ -107,10 +111,30 @@
                     </li>
                 </ul>
             </section>
-            
+        </div>
+
+        <div class="contacto" id="cont4">
+            <p>
+                <strong>
+                    Si tenes algún proyecto en mente y queres que lo hagamos realidad, comunicate con nosotros. ¡Escribinos a nuestro mail globalizart2023@gmail.com y dá un paso al crecimiento!
+                </strong>
+            </p>
         </div>
     </main>
 
+    <footer>
+        <p>Visitá nuestras redes:</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://instagram.com/globalizar_t?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p>el sitio fue desarrollado por globalizart2023@gmail.com</p>
+</footer>
+
+<a href="#" class="subir">
+    <i class="fa-regular fa-circle-up"></i>
+</a>
 
 
 <script type="text/javascript" src="./nav.js"></script>

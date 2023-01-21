@@ -1,4 +1,4 @@
-@import "../scss/variables.scss";
+@import "./scss/variables.scss";
 *{
     box-sizing: 0;
     margin: 0;
@@ -30,7 +30,10 @@ body {
         span {
             color: black;
         }
-    }
+        a {
+            color: $color1;
+        }
+}
     // .logo:hover {
     //     transform: scale(1.05);
     // }
@@ -212,7 +215,7 @@ main {
         .texto1 {
             width: 40%;
             text-align: center;
-            padding-left: 10px;
+            padding-bottom: 20px;            
             h1 {
                 font-size: $f-l;
                 padding-bottom: 20px;
@@ -224,10 +227,10 @@ main {
         .colaboradores {
             width: 60%;
             text-align: center;
-            
             ul li {
                 display: inline-block;
-                padding-inline: 20px;            
+                padding-inline: 20px;
+                padding-bottom: 20px;            
                 img {
                     border: 1px solid $color2;
                     border-radius: 50%;
@@ -235,7 +238,46 @@ main {
             }
         }
     }
+    .contacto {
+        text-align: center;
+        padding: 200px 40px;
+        height: auto;
+        p {
+            font-size: $f-m;
+        }
+    }
 }
+footer {
+    height: 85px;
+    width: 100%;
+    text-align: center;
+    background-color: $color3;
+    color: $color1;
+    box-shadow: inset 0 0 2px $color4;
+    bottom: 0;
+    p {
+        font-size: $f-xs;
+    }
+    .redes a {
+        list-style: none;
+        font-size: $f-l;
+        padding-top: 0;
+        color: $color1;
+        padding-inline: 5px;
+    }
+}
+.subir {
+    position: fixed;
+    bottom: 90px;
+    right: 40px;
+    font-size: 35px;
+    border-radius: 40px;
+    color: $color2;
+}
+.subir:hover {
+    color: $color3;
+}
+
 @media screen and (min-width: 300px) and (max-width: 1000px) {
     .nosotros {
         display: block !important;
@@ -246,6 +288,9 @@ main {
         .colaboradores {
             width: 100% !important;
         }
+    }
+    .subir {
+        display: none;
     }
 }
 

@@ -34,6 +34,9 @@ body {
 .header .logo span {
   color: black;
 }
+.header .logo a {
+  color: #f7f5e6;
+}
 .header .nav-links {
   list-style: none;
 }
@@ -197,7 +200,7 @@ main .nosotros {
 main .nosotros .texto1 {
   width: 40%;
   text-align: center;
-  padding-left: 10px;
+  padding-bottom: 20px;
 }
 main .nosotros .texto1 h1 {
   font-size: 32px;
@@ -213,10 +216,52 @@ main .nosotros .colaboradores {
 main .nosotros .colaboradores ul li {
   display: inline-block;
   padding-inline: 20px;
+  padding-bottom: 20px;
 }
 main .nosotros .colaboradores ul li img {
   border: 1px solid #333a56;
   border-radius: 50%;
+}
+main .contacto {
+  text-align: center;
+  padding: 200px 40px;
+  height: auto;
+}
+main .contacto p {
+  font-size: 21px;
+}
+
+footer {
+  height: 85px;
+  width: 100%;
+  text-align: center;
+  background-color: #52658f;
+  color: #f7f5e6;
+  box-shadow: inset 0 0 2px #e8e8e8;
+  bottom: 0;
+}
+footer p {
+  font-size: 12px;
+}
+footer .redes a {
+  list-style: none;
+  font-size: 32px;
+  padding-top: 0;
+  color: #f7f5e6;
+  padding-inline: 5px;
+}
+
+.subir {
+  position: fixed;
+  bottom: 90px;
+  right: 40px;
+  font-size: 35px;
+  border-radius: 40px;
+  color: #333a56;
+}
+
+.subir:hover {
+  color: #52658f;
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
@@ -229,6 +274,9 @@ main .nosotros .colaboradores ul li img {
   }
   .nosotros .colaboradores {
     width: 100% !important;
+  }
+  .subir {
+    display: none;
   }
 }
 @media screen and (max-width: 800px) {
