@@ -240,10 +240,21 @@ main {
     }
     .contacto {
         text-align: center;
-        padding: 200px 40px;
-        height: auto;
-        p {
-            font-size: $f-m;
+        padding: 80px 30px;
+        height: 100%;
+        h2 {
+            margin-bottom: 15px;
+        }
+        .formulario {
+            display: grid;
+            text-align: left;
+            width: 30%;
+            margin: auto;
+        }
+        .botones {
+            display: grid;
+            width: 50px;
+            margin: auto;
         }
     }
 }

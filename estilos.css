@@ -224,11 +224,22 @@ main .nosotros .colaboradores ul li img {
 }
 main .contacto {
   text-align: center;
-  padding: 200px 40px;
-  height: auto;
+  padding: 80px 30px;
+  height: 100%;
 }
-main .contacto p {
-  font-size: 21px;
+main .contacto h2 {
+  margin-bottom: 15px;
+}
+main .contacto .formulario {
+  display: grid;
+  text-align: left;
+  width: 30%;
+  margin: auto;
+}
+main .contacto .botones {
+  display: grid;
+  width: 50px;
+  margin: auto;
 }
 
 footer {
