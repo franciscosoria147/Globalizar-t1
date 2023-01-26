@@ -202,6 +202,7 @@ main {
                 filter: grayscale(60%);
                 // transform: all 2s;
                 transition: all 1s;
+                border-radius: 10px;
             }
             a img:hover {
                 filter: grayscale(0);

@@ -188,6 +188,7 @@ main .proyectos .item {
 main .proyectos .item a img {
   filter: grayscale(60%);
   transition: all 1s;
+  border-radius: 10px;
 }
 main .proyectos .item a img:hover {
   filter: grayscale(0);
